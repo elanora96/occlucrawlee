@@ -18,7 +18,7 @@ declare module "horg" {
     species: string;
   }
 
-  export interface OcclupanidEntry {
+  export interface Occlupanid {
     name: string;
     canonicalUrl: string;
     id: number;

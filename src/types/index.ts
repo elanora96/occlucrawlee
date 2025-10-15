@@ -2,11 +2,11 @@ import type { Cheerio } from "cheerio";
 import type { Element } from "domhandler";
 import type {
   GeographicalClassification,
-  OcclupanidEntry,
+  Occlupanid,
   TaxonomicRank,
 } from "horg";
 
-export class Occlupanid implements OcclupanidEntry {
+export class OcclupanidEntry implements Occlupanid {
   name: string;
   canonicalUrl: string;
   id: number;

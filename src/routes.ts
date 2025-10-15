@@ -1,5 +1,5 @@
 import { createCheerioRouter, Dataset } from "crawlee";
-import { Occlupanid } from "./types/index.js";
+import { OcclupanidEntry } from "./types/index.js";
 
 export const router = createCheerioRouter();
 
@@ -29,7 +29,7 @@ router.addHandler("SPECIES", async ({ log, $, request: { url } }) => {
 
   const $entry = $(".entry");
 
-  const breadClip = new Occlupanid($entry, url);
+  const breadClip = new OcclupanidEntry($entry, url);
 
   // Push data to Crawlee's dataset
   await Dataset.pushData(breadClip);
