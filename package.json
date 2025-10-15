@@ -1,0 +1,36 @@
+{
+	"name": "occlucrawlee",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "A Web Spider for Horg.com",
+	"author": "Elanora Manson",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/elanora96/occlucrawlee.git"
+	},
+	"keywords": [
+		"crawlee",
+		"cheeriocrawler",
+		"typescript",
+		"occlupanid"
+	],
+	"dependencies": {
+		"crawlee": "^3.15.1"
+	},
+	"devDependencies": {
+		"@apify/tsconfig": "^0.1.1",
+		"@types/node": "^24.7.2",
+		"cheerio": "^1.1.2",
+		"domhandler": "^5.0.3",
+		"tsx": "^4.20.6",
+		"typescript": "^5.9.3"
+	},
+	"scripts": {
+		"start": "npm run start:dev",
+		"start:prod": "node dist/main.js",
+		"start:dev": "tsx src/main.ts",
+		"build": "tsc",
+		"test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+	}
+}
