@@ -29,7 +29,7 @@ router.addHandler("SPECIES", async ({ log, $, request: { url } }) => {
 
   const $entry = $(".entry");
 
-  const breadClip = new OcclupanidEntry($entry, url);
+  const breadClip = new OcclupanidEntry($entry, url, $);
 
   // Push data to Crawlee's dataset
   await Dataset.pushData(breadClip);

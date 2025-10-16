@@ -18,6 +18,11 @@ declare module "horg" {
     species: string;
   }
 
+  export interface ParsedSpeciesDataList {
+    taxonomicRank: TaxonomicRank;
+    externalMorphology: string;
+  }
+
   export interface Occlupanid {
     name: string;
     canonicalUrl: string;
